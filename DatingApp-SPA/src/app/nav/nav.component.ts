@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
-import { NEXT } from '@angular/core/src/render3/interfaces/view';
 
 @Component({
   selector: 'app-nav',
@@ -19,7 +18,7 @@ model: any = {};
       next => {
         console.log('Logged is successfully');
       }, error => {
-        console.log('Login failed');
+        console.log(error);
       });
   }
 
